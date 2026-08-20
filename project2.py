@@ -23,7 +23,7 @@ from langchain_community.vectorstores import FAISS
 db = FAISS.from_documents(finalDoc, embeddings)
 db
 
-query = input("Teri gend mein nunu!! Sawal puch!!!")
+query = input("Tu mera bhai hai, desh ka sipahi hai!! Sawal puch!!!")
 docs=db.similarity_search(query)
 for i in range(len(docs)):
   print(docs[i].page_content)
