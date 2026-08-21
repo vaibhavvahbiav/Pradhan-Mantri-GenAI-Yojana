@@ -5,6 +5,7 @@ from langchain_core.documents import Document
 from pypdf import PdfReader
 
 
+
 def extract_pdf(file):
     reader = PdfReader(file)
     text = ""
